@@ -1,4 +1,4 @@
-# IVProject
+# Visualizing News Reports
 ![This is preview](https://github.com/miniwangdali/IVProject/blob/master/preview.png)
 #### Authors: Xiaoyan Wang, Meng Yang, Ze He
 
