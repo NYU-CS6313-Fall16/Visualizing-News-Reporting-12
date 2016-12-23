@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Visualizing News Reports</title>
+    <meta name="author" content="Xiaoyan Wang" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS
+        ============================================= -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <!-- Javascript
+        ============================================= -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+
+<body onload="load()">
+<div id="float_info" class="float-info">
+    <div></div>
+</div>
+<div class="top title">
+    <div>
+        Visualizing News Reports
+    </div>
+</div>
+<div class="content">
+    <div class="left">
+        <div class="left-block">
+            <span class="bold">Time Filter</span>
+            <div>From:</div>
+            <input id="date_filter_input_from" type="date" onchange="onTimeChange(event)" />
+<div>To:</div>
+<input id="date_filter_input_to" type="date" onchange="onTimeChange(event)" />
+</div>
+<div class="left-block">
+    <span class="bold">Brief Introduction</span><br>
+    This is a website that can give you a brief idea of the topics on which a specific website posted most and fastest within a given time range. Only <b>First Mentioned</b> reports in a story on the internet is visulized. Each website block is expanded from left to right with time from the early to the late.
+
+</div>
+
+</div>
+<div class="middle">
+    <div class="middle-canvas">
+        <div id="chart" class="middle-chart">
+
+        </div>
+    </div>
+    <!--<div class="middle-bottom-block">
+
+        <div class="block">
+            <div class="input-field block-title">
+                <input type="text" id="autocomplete-text-corp" class="autocomplete">
+                <label for="autocomplete-text-corp">Corporation Selection</label>
+            </div>
+            <div id="corpsSelection" class="block-content">
+            </div>
+        </div>
+    </div>-->
+</div>
+<div class="right">
+    <div class="input-field">
+        <input type="text" id="autocomplete-text-website" class="autocomplete">
+        <label for="autocomplete-text-website">Websites</label>
+    </div>
+    <div id="websiteSelection" class="right-block">
+
+    </div>
+    <div class="input-field">
+        <input type="text" id="autocomplete-text-topic" class="autocomplete">
+        <label for="autocomplete-text-topic">Topic Selection</label>
+    </div>
+    <div class="right-block">
+        <div id="topicsSelection" class="block-content">
+        </div>
+    </div>
+</div>
+<div class="clearframe"></div>
+</div>
+</body>
+<footer>
+</footer>
+
+</html>

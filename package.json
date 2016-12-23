@@ -1,0 +1,25 @@
+{
+  "name": "newsstreaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miniwangdali/IVProject.git"
+  },
+  "author": "Meng Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miniwangdali/IVProject/issues"
+  },
+  "homepage": "https://github.com/miniwangdali/IVProject#readme"
+}
